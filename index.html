@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="src/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+      <title>Newsletter Card Component - FrontendPro Challenge</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Level Up Your Frontend Skills</h1>
+        <p class="sub-text">Sign up for our free newsletter to receive weekly coding challenges that  will help you improve your frontend development skills.</p>
+        <form action="post" id="newsletter-form">
+            <div class="form-input">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required autocomplete="email" />
+                <button type="submit"> Subscribe </button>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="terms" name="terms" required />
+                <p class="checkbox-text">By checking this box, you agree to receive our weekly newsletter containing coding challenges, tips, and other related content. You may unsubscribe from the newsletter at any time</p>
+            </div>
+            <div class="message"></div>
+        </form>
+    </div>    
+
+    <script src="src/script.js"></script>            
+  </body>
+  
+</html>

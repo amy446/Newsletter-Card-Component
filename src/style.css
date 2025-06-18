@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: #E6E9FB;
+  overflow: hidden;
+  font-family: 'Poppins';
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px ;
+  padding: 7.4rem 11.15rem; 
+  width: 1094px;
+  text-align: center;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.4);
+  background-color: white;
+}
+h1{
+  font-family: 'Merriweather';
+  font-size: 4rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 1.2rem;
+}
+.sub-text{
+  font-size: 2.4rem;
+  color: #374151;
+  margin-bottom: 2.4rem ;
+}
+.form-input{
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 1.2rem ;
+}
+#email{
+  background-color: #FAFAFF;
+  border: solid 1px #B3B8D8;
+  height: 72px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.8rem 0 1.8rem 3.2rem;
+  font-size: 2.4rem;
+}
+input::placeholder{
+  font-size: 2.4rem;
+  color: #B3B8D8;
+}
+button{
+  background-color: #111827;
+  color: white;
+  padding: 1.8rem 3.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 2.4rem;
+  height: 7.2rem;
+  text-align: center;
+}
+.form-check{
+  display: flex;
+  align-items: start;
+  gap: 1.6rem;
+}
+.form-check p{
+  font-size: 1.4rem;
+  color: #111827;
+  width: 778px;
+  text-align: left;
+}
+
+@media  (max-width: 1280px) {
+  .container{
+    width: fit-content;
+  }
+}
+@media  (max-width: 1090px) {
+  .container{
+    width: 800px;
+    padding: 5rem 7rem;
+  }
+  h1{
+    font-size: 3.6rem;
+  }
+  .sub-text{
+    font-size: 1.6rem;
+  }
+  #email , input::placeholder,button{
+    font-size: 2rem;
+  }
+  #email{
+    padding: 1.2rem 0 1.2rem 2rem;
+  }
+  button{
+    padding: 1.2rem 2rem;
+  }
+}
+@media  (max-width: 906px) {
+  .container{
+    width: 600px;
+    padding: 3.2rem 4rem;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .sub-text{
+    font-size: 1.4rem;
+  }
+  #email , input::placeholder,button{
+    font-size: 1.8rem;
+  }
+  #email{
+    padding: .5rem 0 1.2rem .5rem;
+  }
+  button{
+    padding: .5rem 1.2rem;
+  }
+  .form-check p{
+    width: auto;
+  }
+}
+@media  (max-width: 590px) {
+  .container{
+    width: 400px;
+    padding: 3rem 4rem;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+  .sub-text{
+    font-size: 1.2rem;
+  }
+  #email , input::placeholder,button{
+    font-size: 1.6rem;
+  }
+  #email{
+    padding: .2rem 0 .2rem .1rem;
+  }
+  button{
+    padding: .2rem 1rem;
+  }
+  #email,button{
+    width: min-content;
+    height: 60px;
+  }
+  .form-check p{
+    font-size: 1.2rem;
+  }
+}
+@media  (max-width: 438px) {
+  .container{
+    width: 300px;
+    padding: 3rem 4rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  #email{
+    width: 100px;
+    padding: .2rem 0 .2rem .1rem;
+    overflow-x: scroll;
+  }
+  #email , input::placeholder,button{
+    font-size: 1.5rem;
+  }
+  #email,button{
+    padding: .1rem .1rem;
+    height: 40px;
+  }
+  button{
+    border: 0px;
+  }
+  
+  .form-check{
+    gap: 1rem;
+  }
+  .form-check p{
+    font-size: 1.2rem;
+  }
+}
